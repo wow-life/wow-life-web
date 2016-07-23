@@ -1,0 +1,39 @@
+html, body {
+  height: 100%;
+  min-height: 650px;
+  min-width: 1024px;
+  font-family: "Comic Sans MS";
+  font-weight: 400;
+  cursor: default;
+  padding: 0;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.clear-fix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  float: none;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.clearfix,
+%clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
