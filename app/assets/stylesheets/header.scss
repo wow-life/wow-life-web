@@ -30,5 +30,11 @@ header {
       border: 1px transparent solid;
       border-radius: 20px;
     }
+
+    .moving_logo {
+      background-image: asset_url("moving_logo.gif");
+      background-repeat: no-repeat;
+      background-position-x: 20%;
+    }
   }
 }
