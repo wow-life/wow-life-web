@@ -44,8 +44,13 @@ ul {
 .content {
   top: 30%;
   left: 20%;
-  height: 100%;
+  height: auto;
   width: 80%;
   position: relative;
   text-align: center;
+  max-height: 100%;
+
+  p{
+    padding: 5px 0 5px 0;
+  }
 }
