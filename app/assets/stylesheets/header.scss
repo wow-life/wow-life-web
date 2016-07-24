@@ -11,7 +11,7 @@ header {
   margin: 0;
   
   .logo{
-    background: url("logo.jpg") no-repeat 80%;
+    background: asset_url("logo.jpg") no-repeat 80%;
     height: 25%;
     background-size: 70%;
   }
