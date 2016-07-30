@@ -12,5 +12,10 @@ class ApplicationController < ActionController::Base
 
   def health
     render :template => 'pages/health.html.erb'
+    end
+
+  def hormony
+    render :template => 'pages/hormony.html.erb'
   end
+
 end
