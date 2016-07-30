@@ -64,7 +64,7 @@ ul {
   position: relative;
   text-align: center;
   max-height: 100%;
-  padding: 10px 0 25% 0;
+  padding: 10px 0 20% 0;
 
   p {
     padding: 5px 0 5px 0;
@@ -75,20 +75,20 @@ ul {
   position: fixed;
   display: block;
   top: 0;
-  max-height: 10%;
-  max-width: 80%;
-  height: 10%;
+  right: 5%;
+  max-height: 222px;
+  max-width: 75%;
+  height: 20%;
   width: 100%;
   padding: 0;
   margin: 0;
-  z-index: 100;
+  z-index: 99;
+  background-color: #FFF;
 }
 
 .flash {
-  left: 18%;
   position: absolute;
   height: 200px;
-  width: 78%;
-  background-color: #FFF;
+  width: 100%;
   text-align: center;
 }
