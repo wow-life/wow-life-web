@@ -2,7 +2,6 @@ header {
   top: 0;
   max-height: 100%;
   max-width: 20%;
-  float: left;
   text-align: center;
   height: 100%;
   padding: 0;
@@ -11,8 +10,8 @@ header {
   position: fixed;
   
   .logo{
-    background: asset_url("logo.jpg") no-repeat 80%;
-    height: 25%;
+    background: asset_url("logo.png") no-repeat 80%;
+    height: 250px;
     background-size: 70%;
   }
   

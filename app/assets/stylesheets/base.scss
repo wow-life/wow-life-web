@@ -1,12 +1,28 @@
 html, body {
-  height: 100%;
+  height: auto;
   font-family: "Comic Sans MS";
   font-weight: 400;
   cursor: default;
-  padding: 0;
+  min-height: 768px;
+  max-height: 900px;
+  min-width: 1024px;
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
+  overflow: hidden;
+}
+
+html {
+  background: asset_url('background_image') ;
+  background-size: 135%;
+  background-position: 50%;
+  background-color: beige;
+}
+
+body {
+  background: #FFF;
+  padding: 10px;
+  overflow: scroll;
 }
 
 .clear-fix:after {
@@ -32,9 +48,8 @@ ul {
   list-style-type: none;
 }
 
-.clearfix,
-%clearfix {
-  &::after {
+.clearfix {
+  &::before {
     clear: both;
     content: '';
     display: table;
@@ -42,15 +57,38 @@ ul {
 }
 
 .content {
-  top: 30%;
+  top: 200px;
   left: 20%;
   height: auto;
   width: 80%;
   position: relative;
   text-align: center;
   max-height: 100%;
+  padding: 10px 0 30px 0;
 
   p {
     padding: 5px 0 5px 0;
   }
+}
+
+.fixed {
+  position: fixed;
+  display: block;
+  top: 0;
+  max-height: 10%;
+  max-width: 80%;
+  height: 10%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+}
+
+.flash {
+  left: 18%;
+  position: absolute;
+  height: 200px;
+  width: 78%;
+  background-color: #FFF;
+  text-align: center;
 }
