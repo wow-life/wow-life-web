@@ -8,5 +8,9 @@ class ApplicationController < ActionController::Base
 
   def contact_us
     render :template => 'pages/contact_us.html.erb'
+    end
+
+  def health
+    render :template => 'pages/health.html.erb'
   end
 end
