@@ -18,4 +18,8 @@ class ApplicationController < ActionController::Base
     render :template => 'pages/hormony.html.erb'
   end
 
+  def healing
+    render :template => 'pages/healing.html.erb'
+  end
+
 end
