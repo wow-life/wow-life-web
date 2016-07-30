@@ -22,4 +22,8 @@ class ApplicationController < ActionController::Base
     render :template => 'pages/healing.html.erb'
   end
 
+  def projects
+    render :template => 'pages/projects.html.erb'
+  end
+
 end
