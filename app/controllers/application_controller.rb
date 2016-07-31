@@ -8,11 +8,11 @@ class ApplicationController < ActionController::Base
 
   def contact_us
     render :template => 'pages/contact_us.html.erb'
-    end
+  end
 
   def health
     render :template => 'pages/health.html.erb'
-    end
+  end
 
   def hormony
     render :template => 'pages/hormony.html.erb'
@@ -24,6 +24,30 @@ class ApplicationController < ActionController::Base
 
   def projects
     render :template => 'pages/projects.html.erb'
+  end
+
+  def case1
+    render :template => 'pages/case1.html.erb'
+  end
+
+  def case1_1
+    render :template => 'pages/case1_1.html.erb'
+  end
+
+  def case1_2
+    render :template => 'pages/case1_2.html.erb'
+  end
+
+  def case2
+    render :template => 'pages/case2.html.erb'
+  end
+
+  def case3
+    render :template => 'pages/case3.html.erb'
+  end
+
+  def case4
+    render :template => 'pages/case4.html.erb'
   end
 
 end

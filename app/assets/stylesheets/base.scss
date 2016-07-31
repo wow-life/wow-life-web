@@ -69,4 +69,16 @@ ul {
   p {
     padding: 5px 0 5px 0;
   }
+
+  .button {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 3px 10px;
+    cursor: pointer;
+    color: white;
+    background-color: #75cdff;
+    border: 1px transparent solid;
+    border-radius: 20px;
+    text-decoration: none;
+  }
 }
