@@ -13,6 +13,25 @@ header {
     background: asset_url("logo.png") no-repeat 80%;
     height: 250px;
     background-size: 70%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: 0% 20px;
+    transition: all .8s ease;
+    &:hover {
+      -webkit-transform: rotateY(90deg);
+      transform: rotateY(90deg);
+    }
+  }
+  .webName {
+    transform: translate(-40px, -140px);
+    position: absolute;
+    z-index: -1;
+    font-size: 20px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
+    background-image: gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
   }
 
   .menu {
@@ -32,10 +51,21 @@ header {
       color: white;
       background-color: #75cdff;
       border: 1px transparent solid;
-      border-radius: 20px;
+      border-radius: 10px;
+    }
+
+    li:hover {
+      animation-name: buzz;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      border-radius: 20px !important;
     }
     .sub_menu_main {
       height: 20px;
+      transition: all;
+      transition-duration: 0.3s;
+      transition-timing-function: linear;
 
       .sub_menu {
         display: none;
@@ -46,7 +76,19 @@ header {
 
       &:hover {
         margin-bottom: 250px;
-        
+        animation: none;
+
+        &:before {
+          pointer-events: none;
+          position: relative;
+          z-index: -1;
+          content: '';
+          border-style: solid;
+          left: calc(50% + 25px);
+          border-width: 15px 15px 0 15px;
+          border-color: #75cdff transparent transparent transparent;
+          bottom: -35px;
+        }
         .sub_menu {
           display: block;
         }
