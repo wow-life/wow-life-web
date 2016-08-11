@@ -1,9 +1,7 @@
 header {
   top: 0;
-  max-height: 100%;
   max-width: 20%;
   text-align: center;
-  height: 100%;
   padding: 0;
   margin: 0;
   z-index: 100;
@@ -27,11 +25,15 @@ header {
     position: absolute;
     z-index: -1;
     font-size: 20px;
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
-    background-image: gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
+    left: 50%;
+    //background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
+    //background-image: gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
+    //background: -webkit-gradient(linear, left top, right top, color-stop(0, #e01a17), color-stop(0.33, #f6ff00), color-stop(0.66, #20115f), color-stop(0.75, #0a5d27));
+    //background: linear-gradient(to right, #e01a17, #f6ff00 25%, #20115f 50%, #0a5d27 100%);
     color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+    //-webkit-background-clip: text;
+    //-moz-background-clip: text;
+    //background-clip: text;
   }
 
   .menu {
@@ -98,7 +100,7 @@ header {
     .moving_logo {
       background-image: asset_url("moving_logo.gif");
       background-repeat: no-repeat;
-      background-position-x: 20%;
+      background-position: 20%,0;
     }
   }
 }

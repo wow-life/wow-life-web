@@ -12,55 +12,62 @@
 </head>
 
 <body>
-<header>
-  <div class="logo"></div>
-  <span class="webName">Wow-Life</span>
-  <div class="menu">
-    <ul>
-      <a href=<%= root_path %>>
-        <li class="moving_logo">Home</li>
-      </a>
-      <a href=<%= health_path %>>
-        <li>Health + Attitude</li>
-      </a>
-      <a href=<%= hormony_path %>>
-        <li>Complete Hormony</li>
-      </a>
-      <a href=<%= healing_path %>>
-        <li>Heal yourself, Others</li>
-      </a>
-      <a href=<%= projects_path %>>
-        <li>Reach out Project</li>
-      </a>
-      <a href=<%= case1_path %>>
-        <li class="sub_menu_main">Case Studies
-          <ul class="sub_menu">
-            <a href=<%= case1_path %>>
-              <li>Case 1</li>
-            </a>
-            <a href=<%= case2_path %>>
-              <li>Case 2</li>
-            </a>
-            <a href=<%= case3_path %>>
-              <li>Case 3</li>
-            </a>
-            <a href=<%= case4_path %>>
-              <li>Case 4</li>
-            </a>
-          </ul>
-        </li>
-      </a>
-      <a href=<%= person_path %>>
-        <li>Person Behind</li>
-      </a>
-      <a href=<%= contact_us_path %>>
-        <li>Contact Us</li>
-      </a>
-    </ul>
+<div class="main_content">
+  <header>
+    <div class="logo"></div>
+    <span class="webName">Wow-Life</span>
+    <div class="menu">
+      <ul>
+        <a href=<%= root_path %>>
+          <li class="moving_logo">Home</li>
+        </a>
+        <a href=<%= health_path %>>
+          <li>Health + Attitude</li>
+        </a>
+        <a href=<%= hormony_path %>>
+          <li>Complete Hormony</li>
+        </a>
+        <a href=<%= healing_path %>>
+          <li>Heal yourself, Others</li>
+        </a>
+        <a href=<%= projects_path %>>
+          <li>Reach out Project</li>
+        </a>
+        <a href=<%= case1_path %>>
+          <li class="sub_menu_main">Case Studies
+            <ul class="sub_menu">
+              <a href=<%= case1_path %>>
+                <li>Case 1</li>
+              </a>
+              <a href=<%= case2_path %>>
+                <li>Case 2</li>
+              </a>
+              <a href=<%= case3_path %>>
+                <li>Case 3</li>
+              </a>
+              <a href=<%= case4_path %>>
+                <li>Case 4</li>
+              </a>
+            </ul>
+          </li>
+        </a>
+        <a href=<%= person_path %>>
+          <li>Person Behind</li>
+        </a>
+        <a href=<%= contact_us_path %>>
+          <li>Contact Us</li>
+        </a>
+      </ul>
+    </div>
+  </header>
+  <div class="fixed_header">
+    <div class="flash">
+      <h1>Wow-L!fe</h1>
+    </div>
   </div>
-</header>
-<div class="content">
-  <%= yield %>
+  <div class="content">
+    <%= yield %>
+  </div>
 </div>
 </body>
 </html>
