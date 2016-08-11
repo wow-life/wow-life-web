@@ -22,10 +22,10 @@ header {
   }
   .founder {
     position: absolute;
-    height: 40%;
-    width: 50%;
+    height: 100px;
+    width: 100px;
     left: 50%;
-    transform: translate(-30%,-140%);
+    transform: translate(-35%,-175%);
     border: 1px solid transparent;
     border-radius: 150px;
     background: asset_url("founder") no-repeat;
@@ -36,9 +36,8 @@ header {
   }
 
   .menu {
-    height: 100px;
+    height: 100%;
     float: left;
-    min-width: 100%;
     a {
       text-decoration: none;
       color: #FFF;
@@ -46,7 +45,8 @@ header {
 
     ul li {
       display: block;
-      margin: 20px 0;
+      font-size: 12px;
+      margin: 10% 0;
       padding: 3px 10px;
       cursor: pointer;
       color: white;
@@ -72,10 +72,11 @@ header {
         position: absolute;
         width: 50%;
         margin-left: 50px;
+        padding-top: 5px;
       }
 
       &:hover {
-        margin-bottom: 250px;
+        margin-bottom: 150px;
         animation: none;
 
         &:before {
@@ -85,9 +86,9 @@ header {
           content: '';
           border-style: solid;
           left: calc(50% + 25px);
-          border-width: 15px 15px 0 15px;
+          border-width: 10px 10px 0 10px;
           border-color: #75cdff transparent transparent transparent;
-          bottom: -45px;
+          bottom: -28px;
         }
         .sub_menu {
           display: block;
