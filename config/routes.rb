@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root 'application#home'
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  root to: 'application#home'
   get 'health', to: 'application#health', as: 'health'
   get 'hormony', to: 'application#hormony', as: 'hormony'
   get 'healing', to: 'application#healing', as: 'healing'
