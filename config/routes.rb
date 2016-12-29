@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :admins
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  root to: 'application#home'
+  root 'application#home'
   get 'health', to: 'application#health', as: 'health'
   get 'hormony', to: 'application#hormony', as: 'hormony'
   get 'healing', to: 'application#healing', as: 'healing'
