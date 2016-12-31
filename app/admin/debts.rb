@@ -2,7 +2,7 @@ ActiveAdmin.register Debt do
 
   menu priority: 1, label: "Accounts"
 
-  permit_params :status, :guarantee_name, :desc
+  permit_params :status, :guarantee_name, :desc, :name, :amount, :date_of_issue, :emi_amount, :no_of_installments, :emi_date, :mode_of_payment, :initial_interest, :status
 
   index do
     selectable_column
