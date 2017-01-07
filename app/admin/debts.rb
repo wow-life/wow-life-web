@@ -17,4 +17,24 @@ ActiveAdmin.register Debt do
     actions
   end
 
+  form do |f|
+    f.inputs "Debts Details" do
+      f.input :name
+      f.input :amount
+      f.input :date_of_issue
+      f.input :emi_amount
+      f.input :no_of_installments
+      f.li do
+        f.label "Mode Of Payment"
+        f.select :mode_of_payment, (["RTGS", "NEFT", "IMPS", "Cheque", "Cash"])
+      end
+      f.input :initial_interest
+      f.li do
+        f.label "Status"
+        f.select :status, (["IN PROGRESS", "COMPLETED"])
+      end
+      actions
+    end
+  end
+
 end
