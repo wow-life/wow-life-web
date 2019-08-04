@@ -9,7 +9,7 @@ header {
 
   .logo {
     background: asset_url("logo.png") no-repeat 80%;
-    height: 250px;
+    height: 200px;
     background-size: 75%;
     position: relative;
     transform-style: preserve-3d;
@@ -32,10 +32,15 @@ header {
       padding: 3px 10px;
       cursor: pointer;
       color: white;
-      background-color: #75cdff;
+      background-color: #5271FF;
       border: 1px transparent solid;
       border-radius: 10px;
     }
+
+    li:hover {
+     border-radius: 20px !important;
+     color: #FFBD4A;
+   }
 
     .sub_menu_main {
       transition: all;
@@ -62,7 +67,7 @@ header {
           border-style: solid;
           left: calc(50% + 25px);
           border-width: 10px 10px 0 10px;
-          border-color: #75cdff transparent transparent transparent;
+          border-color: #5271FF transparent transparent transparent;
           bottom: -28px;
         }
         .sub_menu {

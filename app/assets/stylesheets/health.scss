@@ -5,10 +5,10 @@
       border-collapse: collapse;
       border-spacing: 0;
       empty-cells: hide;
-      border: 1px solid #cbcbcb;
+      border: 1px solid #000;
       td, th {
         border-width: 0 0 0 1px;
-        border-left: 1px solid #cbcbcb;
+        border-left: 1px solid #000;
         font-size: inherit;
         margin: 0;
         overflow: visible;
@@ -18,8 +18,7 @@
         border-left-width: 0;
       }
       thead {
-        background-color: #e0e0e0;
-        color: #000;
+        color: #FFBD4A;
         vertical-align: bottom;
       }
       td {
@@ -27,10 +26,9 @@
       }
     }
     .pure-table-odd td {
-      background-color: #f2f2f2;
     }
     .pure-table-striped tbody tr:nth-child(2n-1) td {
-      background-color: #FFF;
+      background-color: #405EEA;
     }
   }
 }
