@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Alice', 'Open Sans';
   font-weight: 400;
   font-size: 20px;
   cursor: default;
@@ -87,6 +87,7 @@ ul {
     margin: auto;
     font-size: 4em;
     flex: 0 1 50%;
+    font-family: 'Niconne', 'Open Sans';
   }
 
   &-sub-heading {
