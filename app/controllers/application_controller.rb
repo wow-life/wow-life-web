@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
 
   def home
     render :template => 'pages/home.html.erb'
+
   end
 
   def health
