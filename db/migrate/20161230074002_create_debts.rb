@@ -1,4 +1,4 @@
-class CreateDebts < ActiveRecord::Migration
+class CreateDebts < ActiveRecord::Migration[4.2]
   def change
     create_table :debts do |t|
       t.string  :name,                null: false, default: ""
