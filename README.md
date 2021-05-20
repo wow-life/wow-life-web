@@ -7,18 +7,17 @@ Things you may want to cover:
 
 * Ruby version
 
-* System dependencies
-
-* Configuration
+        2.7.3
 
 * Database creation
 
+        CREATE DATABASE wow_life_development;
+
 * Database initialization
 
-* How to run the test suite
+        rails db:migrate
+        rails db:seed
 
-* Services (job queues, cache servers, search engines, etc.)
+* Run Application
 
-* Deployment instructions
-
-* ...
+        rails s
