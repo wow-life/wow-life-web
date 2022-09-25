@@ -1,7 +1,25 @@
 menu:
   - name: Home
     link: /
-  - name: About
-    link: /about
-  - name: Posts
-    link: /posts
+  - name: Health + Attitude
+    link: /health
+  - name: Complete Hormony
+    link: /hormony
+  - name: Heal yourself, Others
+    link: /healing
+  - name: Reach out Project
+    link: /projects
+  - name: Case Studies
+    link: /case1
+  - name: Case 1
+    link: /case-1
+  - name: Case 2
+    link: /case-2
+  - name: Case 3
+    link: /case-3
+  - name: Case 4
+    link: /case-4
+  - name: Person Behind
+    link: /person
+  - name: Contact Us
+    link: /contact-us

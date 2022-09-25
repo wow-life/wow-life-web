@@ -21,7 +21,7 @@ plugins:
 sass:
   sass_dir: _sass
   style: compressed
-logo: /assets/img/name-logo.png
+logo: /assets/img/logo.png
 category_layout: "category_index.html"
 category_path: "tags"
 # paginate: 2

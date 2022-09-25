@@ -3,10 +3,8 @@
 
 @charset "utf-8";
 
-@import 'variables';
 @import '404';
-@import 'fonts';
-@import 'common';
-@import 'common_mobile';
-@import 'common_dark';
-@import 'copy_code';
+@import 'base';
+@import 'animation';
+@import 'header';
+@import 'health';
