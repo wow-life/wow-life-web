@@ -1,15 +1,15 @@
-title: VikyTech
+title: Wow-L!fe
 email: vikytech.mail@gmail.com
-description: Site to share my learnings in form of blogs.
+description: wow-life website
 baseurl: ''
-url: 'https://vikytech.in'
-twitter_username: vikytech007
-github_username: vikytech
+url: 'https://wow-life.in'
+twitter_username:
+github_username:
 github:
   - metadata
-author: Vikhyath Choradia
-facebook: vikytech.page
-linkedin: vikytech
+author: Nirmal Kumar
+facebook:
+linkedin:
 
 # Build settings
 # markdown: kramdown
