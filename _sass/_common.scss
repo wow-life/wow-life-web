@@ -1,0 +1,160 @@
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    color: $black;
+    background: $white;
+    font: 100% system-ui;
+}
+
+a {
+    color: $link;
+}
+
+h1 {
+    color: $black
+}
+
+h2 {
+    color: $gray;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    color: $grey;
+}
+
+code,
+pre {
+    color: $code;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: auto;
+}
+
+header {
+    flex: 1 1 auto;
+
+    .header-wrapper {
+        position: fixed;
+    }
+
+    position: relative;
+}
+
+section {
+    flex: 1 1 60%;
+
+    img {
+        max-width: 60%;
+    }
+}
+
+footer {
+    flex: 1 1 auto;
+
+}
+
+.highlight,
+pre {
+    background-color: $code_bg;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.console-container {
+    font-family: Khula;
+    font-size: 2.5em;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    display: block;
+    color: $black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-left: 30px;
+}
+
+.blink {
+    animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    color: $pale_white;
+    justify-content: center;
+
+    &-item {
+        flex: 1 1 auto;
+        border: 3px solid $black;
+        border-radius: 40px;
+        padding: 5px 15px;
+        margin: 5px;
+
+        &:hover {
+            background-color: $menu_dark;
+        }
+    }
+}
+
+.posts {
+    list-style: none;
+}
+
+.tag-cloud {
+    display: flex;
+    flex-flow: column wrap;
+    height: 200px;
+    justify-content: space-around;
+}
+
+.tags {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+    .tag {
+        color: $sub_link;
+        padding: 5px;
+    }
+}
+
+.button {
+    font-weight: 400;
+    padding: 20px;
+    background-color: rgba($button_bg, 1.0);
+    color: rgb(145, 122, 122);
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    transition: all .2s linear;
+
+    &:hover {
+        background-color: rgba($button_bg, 0.8);
+        transition: all .2s linear;
+    }
+}

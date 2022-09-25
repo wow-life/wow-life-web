@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Mutation Testing | VikyTech</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Mutation Testing" />
+<meta name="author" content="Vikhyath Choradia" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Site to share my learnings in form of blogs." />
+<meta property="og:description" content="Site to share my learnings in form of blogs." />
+<link rel="canonical" href="https://vikytech.in/mutation-testing" />
+<meta property="og:url" content="https://vikytech.in/mutation-testing" />
+<meta property="og:site_name" content="VikyTech" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-10-29T09:30:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Mutation Testing" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"https://vikytech.in/mutation-testing","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://vikytech.in/assets/img/name-logo.png"},"name":"Vikhyath Choradia"},"author":{"@type":"Person","name":"Vikhyath Choradia"},"headline":"Mutation Testing","dateModified":"2020-10-29T09:30:00+08:00","datePublished":"2020-10-29T09:30:00+08:00","description":"Site to share my learnings in form of blogs.","mainEntityOfPage":{"@type":"WebPage","@id":"https://vikytech.in/mutation-testing"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <link rel="stylesheet" href="/assets/css/main.css?v=">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header-wrapper">
+        
+          <a href="https://vikytech.in/">
+            <img src="/assets/img/name-logo.png" alt="Logo">
+          </a>
+        
+
+        <p>Site to share my learnings in form of blogs.</p>
+
+        
+
+        
+
+        
+
+        <div class="menu">
+          
+            <a href="/"><div class="menu-item">Home</div></a>
+          
+            <a href="/about"><div class="menu-item">About</div></a>
+          
+            <a href="/posts"><div class="menu-item">Posts</div></a>
+          
+        </div>
+      </div>
+      </header>
+      <section>
+
+      <small>29 October 2020</small>
+<h1>Mutation Testing</h1>
+
+<p><a href="https://www.youtube.com/watch?v=nTTp8c1C8jA" target="_blank" rel="noopener noreferrer"><img src="https://user-images.githubusercontent.com/3875111/116968161-900f5b80-acd1-11eb-93b0-ef9d12aa4826.png" alt="Watch the video"></a></p>
+
+<p><a href="https://github.com/vikytech/MutationTesting" target="_blank" rel="noopener noreferrer">Demo</a></p>
+
+<h1 id="what-is-mutation-testing">What is Mutation testing</h1>
+
+<p>Mutation testing (or mutation analysis or program mutation) is used to design new software tests and evaluate the quality of existing software tests.
+Each mutated version is called a mutant and tests detect and reject mutants by causing the behavior of the original version to differ from the mutant.</p>
+
+<h2 id="things-to-consider">Things to consider</h2>
+
+<ul>
+  <li>Limit the mutation operators used</li>
+  <li>Limit the number of mutations per class</li>
+  <li>Tweak the number of threads</li>
+  <li>Target only specific portions of your codebase</li>
+  <li>Don’t run this with every commit as it takes time to run these test….may be as smoke test</li>
+</ul>
+
+<h2 id="setup">Setup</h2>
+
+<ul>
+  <li><a href="#gradle">Gradle</a></li>
+  <li><a href="#intellij-plugin">Intellij Plugin</a></li>
+  <li><a href="#command-line">CLI</a></li>
+</ul>
+
+<h3 id="gradle">Gradle</h3>
+
+<p>Add Pitest plugin to gradle</p>
+<div class="code-container">
+    <button class="copy-code-button" aria-label="Copy code to clipboard"></button>
+</div>
+<div class="language-groovy highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">id</span> <span class="s1">'info.solidsoft.pitest'</span> <span class="n">version</span> <span class="s1">'1.6.0'</span>
+</code></pre></div></div>
+
+<p>Create pitest task with your needed configuration</p>
+<div class="code-container">
+    <button class="copy-code-button" aria-label="Copy code to clipboard"></button>
+</div>
+<div class="language-groovy highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pitest</span> <span class="o">{</span>
+    <span class="n">mainSourceSets</span><span class="o">.</span><span class="na">set</span><span class="o">([</span><span class="n">sourceSets</span><span class="o">.</span><span class="na">main</span><span class="o">])</span> <span class="c1">// Only for individual contribution, not recommended for repo having more than 10-15 classes</span>
+    <span class="n">testSourceSets</span><span class="o">.</span><span class="na">set</span><span class="o">([</span><span class="n">sourceSets</span><span class="o">.</span><span class="na">test</span><span class="o">])</span> <span class="c1">// Only for individual contribution, not recommended for repo having more than 10-15 classes</span>
+    <span class="n">targetClasses</span><span class="o">.</span><span class="na">set</span><span class="o">([</span><span class="s2">"com.foo.*"</span><span class="o">,</span><span class="s2">"com.bar.*"</span><span class="o">])</span> <span class="c1">// Ignore if mainSourceSets &amp; testSourceSets is specified</span>
+    <span class="n">excludedClasses</span><span class="o">.</span><span class="na">set</span><span class="o">([</span><span class="s2">"com.foo1.*"</span><span class="o">,</span><span class="s2">"com.bar.IT*"</span><span class="o">])</span>  <span class="c1">// Ignore if mainSourceSets &amp; testSourceSets is specified</span>
+    <span class="n">pitestVersion</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="s1">'1.6.7'</span><span class="o">)</span> <span class="c1">// Not needed if you want to use the default version provided by plugin</span>
+    <span class="n">junit5PluginVersion</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="s1">'0.14'</span><span class="o">)</span>
+    <span class="n">outputFormats</span><span class="o">.</span><span class="na">set</span><span class="o">([</span><span class="s1">'HTML'</span><span class="o">])</span> <span class="c1">// XML is also available</span>
+    <span class="n">mutators</span><span class="o">.</span><span class="na">set</span><span class="o">([</span><span class="s2">"ROR"</span><span class="o">,</span> <span class="s2">"RETURN_VALS"</span><span class="o">,</span> <span class="s2">"INVERT_NEGS"</span><span class="o">,</span> <span class="s2">"MATH"</span><span class="o">,</span> <span class="s2">"VOID_METHOD_CALLS"</span><span class="o">,</span> <span class="s2">"NON_VOID_METHOD_CALLS"</span><span class="o">])</span>
+    <span class="n">avoidCallsTo</span><span class="o">.</span><span class="na">set</span><span class="o">([</span><span class="s2">"java.util"</span><span class="o">,</span> <span class="s2">"java.lang"</span><span class="o">])</span>
+    <span class="n">threads</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="mi">4</span><span class="o">)</span>
+    <span class="n">timestampedReports</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="kc">false</span><span class="o">)</span>
+    <span class="n">mutationThreshold</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="mi">95</span><span class="o">)</span>
+    <span class="n">coverageThreshold</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="mi">95</span><span class="o">)</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Bind the created task with <code class="language-plaintext highlighter-rouge">test</code>/<code class="language-plaintext highlighter-rouge">build</code> task as required</p>
+<div class="code-container">
+    <button class="copy-code-button" aria-label="Copy code to clipboard"></button>
+</div>
+<div class="language-groovy highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">test</span> <span class="o">{</span>
+    <span class="n">finalizedBy</span> <span class="s1">'pitest'</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="intellij-plugin">Intellij Plugin</h3>
+
+<p>Intellij idea → Preferences → Plugins → search “<a href="https://plugins.jetbrains.com/plugin/7119-pit-mutation-testing-idea-plugin/" target="_blank" rel="noopener noreferrer">PIT mutation testing Idea plugin</a>”</p>
+
+<h4 id="extra-params-passed-to-plugin">Extra Params passed to plugin:</h4>
+
+<p>Edit configuration for Pitest Runner and add the needed parameters from below</p>
+
+<h4 id="target-classes">Target Classes:</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    Flag: --targetClasses
+    Possible Values: PackagePath
+
+    Eg: `--targetClasses com.foo.service.auth*,com.foo.service.product.service.*`
+</code></pre></div></div>
+
+<h4 id="source-directory">Source Directory:</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    Flag: --sourceDirs
+    Possible Value: Package ROOT Path
+
+    Eg: `--sourceDirs &lt;PATH_TO_BASE_DIR&gt;/service/src/main`
+</code></pre></div></div>
+
+<h4 id="output-formats">Output Formats:</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>List of formats in which to write mutation results as the mutations are analysed. Supported formats are HTML, XML, CSV.
+
+    Flag: --outputFormats
+    Possible Values: XML,HTML
+
+    Eg: `--outputFormats XML,HTML`
+</code></pre></div></div>
+
+<h4 id="exclude-unit-tests">Exclude Unit Tests:</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    Flag: --excludedClasses
+    Possible Values: REGEX/FileName
+Eg: `--excludedClasses *Test`
+</code></pre></div></div>
+
+<h4 id="exclude-integration-tests">Exclude Integration Tests:</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    Flag: --excludedTestClasses
+    Possible Values: REGEX/FileName
+
+    Eg: `--excludedTestClasses *IntegrationTests,*IntegrationTest`
+
+    PIT filters are matched against the class names in the compiled binary, not against the source file name.
+</code></pre></div></div>
+
+<h4 id="exclude-annotators">Exclude annotators:</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Flag: --excludedMethods
+Possible Values: annotator names
+
+Eg: `--excludedMethods toString,hashCode,equals`
+
+    Excluded methods are used to avoid creating mutants within methods that match the supplied list of names.
+
+PIT test will not consider spring annotator like @Service, @Api, @RestController whereas it mutates other value based spring annotations like @Value and also java annotations like @ToString,@EqualsAndHashCode
+</code></pre></div></div>
+
+<h4 id="customize-mutators">Customize mutator(s):</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Flag: --mutators
+Possible Values: Mutator type
+
+Eg: `--mutators ROR,RETURN_VALS`
+
+List of Mutators recommended
+    ROR
+    RETURN_VALS
+    INVERT_NEGS
+    MATH
+    VOID_METHOD_CALLS
+    NON_VOID_METHOD_CALLS
+</code></pre></div></div>
+<p>If we need to use other mutators, vist <a href="https://pitest.org/quickstart/mutators" target="_blank" rel="noopener noreferrer">official page</a></p>
+
+<h4 id="verbose">Verbose:</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Flag: --verbose
+</code></pre></div></div>
+
+<h2 id="command-line">Command Line</h2>
+
+<p>export a variable named <code class="language-plaintext highlighter-rouge">$CLASSPATH</code> and add all the paths to the dependency jars and <a href="https://github.com/hcoles/pitest/releases" target="_blank" rel="noopener noreferrer">Pitest jars</a></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Pitest jars
+* pitest-x.y.z.jar
+* pitest-command-line-x.y.z.jar
+* pitest-entry-x.y.z.jar
+</code></pre></div></div>
+
+<p>Command:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java -cp $CLASSPATH \
+
+org.pitest.mutationtest.commandline.MutationCoverageReport \
+
+--reportDir &lt;PROJECT_PATH&gt;/build/reports/pittest \
+
+--sourceDirs &lt;PROJECT_PATH&gt;/&lt;MAIN_SRC_PATH&gt; \
+
+--outputFormats XML,HTML \
+
+--mutators ROR,RETURN_VALS,INVERT_NEGS,MATH,VOID_METHOD_CALLS \
+
+--targetClasses "com.foo.service.auth*,com.foo.service.product.*" \
+
+--excludedClasses "*Test" \
+
+--excludedTestClasses "*IntegrationTests,*IntegrationTest"
+</code></pre></div></div>
+
+<h4 id="note-all-the-above-documentation-tested-on-pitest-167">NOTE: All the above documentation tested on Pitest-1.6.7</h4>
+
+
+
+  <small>tags:
+    
+      <a href="/tags/java"><em>#java</em></a>
+    
+      <a href="/tags/mutation-testing"><em>#mutation-testing</em></a>
+    
+      <a href="/tags/pit"><em>#pit</em></a>
+    
+  </small>
+
+
+
+
+<script src="/assets/js/copyCode.js"></script>
+
+      </section>
+      <footer>
+        
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+  </body>
+</html>

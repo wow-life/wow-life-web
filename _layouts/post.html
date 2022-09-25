@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<small>{{ page.date | date: "%-d %B %Y" }}</small>
+<h1>{{ page.title }}</h1>
+
+{{content}}
+
+{% if page.tags %}
+  <small>tags:
+    {% for tag in page.tags %}
+      <a href="{{ "/tags/" | append: tag }}"><em>{{ tag | prepend: '#' }}</em></a>
+    {% endfor %}
+  </small>
+{% endif %}
+
+{% if site.related_posts.size > 2 %}
+<div>
+  <h2>Related Posts</h2>
+  <ul>
+    {% for posts in site.related_posts limit: 2 %}
+    <a href="{{posts.url}}"><li>{{ posts.title }}</li></a>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+<script src="{{ "/assets/js/copyCode.js" | relative_url }}"></script>

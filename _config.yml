@@ -1,0 +1,42 @@
+title: VikyTech
+email: vikytech.mail@gmail.com
+description: Site to share my learnings in form of blogs.
+baseurl: ''
+url: 'https://vikytech.in'
+twitter_username: vikytech007
+github_username: vikytech
+github:
+  - metadata
+author: Vikhyath Choradia
+facebook: vikytech.page
+linkedin: vikytech
+
+# Build settings
+# markdown: kramdown
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-category-pages
+sass:
+  sass_dir: _sass
+  style: compressed
+logo: /assets/img/name-logo.png
+category_layout: "category_index.html"
+category_path: "tags"
+# paginate: 2
+show_downloads: false
+destination: docs/
+include:
+  - CNAME
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
