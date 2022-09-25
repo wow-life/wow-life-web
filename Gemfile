@@ -2,10 +2,11 @@ source 'https://rubygems.org'
 ruby "2.7.3"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.2'
-gem 'railties', '~> 5.2', '>= 5.2.2'
+gem 'rails', '~>7.0.4'
+gem 'railties'
 # Use SCSS for stylesheets
 gem 'sassc'
+gem "sassc-rails", "~> 2.1"
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails'
