@@ -1,2 +1,0 @@
-class DebtsController < ApplicationController
-end

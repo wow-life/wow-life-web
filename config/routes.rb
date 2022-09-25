@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
-  resource :debts
   root to: 'application#home'
   get 'health', to: 'application#health', as: 'health'
   get 'hormony', to: 'application#hormony', as: 'hormony'

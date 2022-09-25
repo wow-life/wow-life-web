@@ -4,8 +4,6 @@ ruby "2.7.3"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
 gem 'railties', '~> 5.2', '>= 5.2.2'
-# Use postgresql as the database for Active Record
-gem 'pg', '~> 0.21.0'
 # Use SCSS for stylesheets
 gem 'sassc'
 # Use Uglifier as compressor for JavaScript assets
@@ -20,12 +18,6 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
-
-# Use ActiveModel has_secure_password
-gem 'activemodel'
-gem 'devise'
-gem 'activeadmin'
-gem 'active_skin'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
