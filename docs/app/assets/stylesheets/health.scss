@@ -1,0 +1,33 @@
+.health {
+  .table-content {
+    .pure-table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      empty-cells: hide;
+      border: 1px solid #000;
+      td, th {
+        border-width: 0 0 0 1px;
+        border-left: 1px solid #000;
+        font-size: inherit;
+        margin: 0;
+        overflow: visible;
+        padding: 0.5em 1em;
+      }
+      td:first-child, th:first-child {
+        border-left-width: 0;
+      }
+      thead {
+        color: #FFBD4A;
+        vertical-align: bottom;
+      }
+      td {
+        background-color: transparent;
+      }
+    }
+    .pure-table-odd td {
+    }
+    .pure-table-striped tbody tr:nth-child(2n-1) td {
+      background-color: #405EEA;
+    }
+  }
+}

@@ -1,5 +1,5 @@
-# vikytech.in
-Website for vikytech.in
+# wow-life.in
+Website for wow-life.in
 
 ## Dev setup
 - To build locally `jekyll build`
