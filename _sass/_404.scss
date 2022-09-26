@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap");
 .wrapper-full {
     display: flex;
     flex-wrap: wrap;
@@ -20,17 +20,15 @@
         text-align: center;
         align-items: center;
         .text_404 {
-            font-family: "Comic Neue", cursive;
             font-size: 10em;
             box-sizing: border-box;
-            color: #DDD;
+            color: #FFBD4A;
         }
         .text_lost {
-            font-family: "Comic Neue", cursive;
             font-size: 2em;
             line-height: 50px;
             box-sizing: border-box;
-            color: #5E7FDC;
+            color: #FFF;
         }
     }
     .window_group {
@@ -91,60 +89,6 @@
     position: absolute;
     top: 55%;
     animation: astronautFly 6s infinite linear;
-}
-
-@keyframes astronautFly {
-    0% {
-        left: -100px;
-    }
-    25% {
-        top: 50%;
-        transform: rotate(30deg);
-    }
-    50% {
-        transform: rotate(45deg);
-        top: 55%;
-    }
-    75% {
-        top: 60%;
-        transform: rotate(30deg);
-    }
-    100% {
-        left: 110%;
-        transform: rotate(45deg);
-    }
-}
-
-@for $k from 1 through 100 {
-    @keyframes twinkle#{$k} {
-        0% {
-            transform: scale(1, 1);
-        }
-        10% {
-            transform: scale(0.3, 0.3);
-        }
-        20% {
-            transform: scale(1, 1);
-        }
-        30% {
-            transform: scale(0.5, 0.5);
-        }
-        40% {
-            transform: scale(1, 1);
-        }
-        100% {
-            transform: scale(1, 1);
-        }
-    }
-}
-
-@keyframes flyby {
-    from {
-        left: 0%;
-    }
-    to {
-        left: -100%;
-    }
 }
 
 @media only screen and (min-width: 1080px) {

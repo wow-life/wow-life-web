@@ -1,26 +1,125 @@
 @-webkit-keyframes buzz {
-  0% { -webkit-transform: rotate(0deg) translate(2px, 1px); }
-  10% { -webkit-transform: rotate(2deg) translate(1px, 2px); }
-  20% { -webkit-transform: rotate(-2deg) translate(3px, 0px) ; }
-  30% { -webkit-transform: rotate(0deg) translate(0px, -2px); }
-  40% { -webkit-transform: rotate(-2deg) translate(-1px, 1px); }
-  50% { -webkit-transform: rotate(2deg) translate(1px, -2px); }
-  60% { -webkit-transform: rotate(0deg) translate(3px, -1px); }
-  70% { -webkit-transform: rotate(2deg) translate(-2px, -1px); }
-  80% { -webkit-transform: rotate(-2deg) translate(1px, 1px); }
-  90% { -webkit-transform: rotate(0deg) translate(-2px, -2px); }
-  100% { -webkit-transform: rotate(2deg) translate(-1px, 2px); }
+    0% {
+        -webkit-transform: rotate(0deg) translate(2px, 1px);
+    }
+    10% {
+        -webkit-transform: rotate(2deg) translate(1px, 2px);
+    }
+    20% {
+        -webkit-transform: rotate(-2deg) translate(3px, 0px);
+    }
+    30% {
+        -webkit-transform: rotate(0deg) translate(0px, -2px);
+    }
+    40% {
+        -webkit-transform: rotate(-2deg) translate(-1px, 1px);
+    }
+    50% {
+        -webkit-transform: rotate(2deg) translate(1px, -2px);
+    }
+    60% {
+        -webkit-transform: rotate(0deg) translate(3px, -1px);
+    }
+    70% {
+        -webkit-transform: rotate(2deg) translate(-2px, -1px);
+    }
+    80% {
+        -webkit-transform: rotate(-2deg) translate(1px, 1px);
+    }
+    90% {
+        -webkit-transform: rotate(0deg) translate(-2px, -2px);
+    }
+    100% {
+        -webkit-transform: rotate(2deg) translate(-1px, 2px);
+    }
 }
+
 @keyframes buzz {
-  0% { transform: rotate(0deg) translate(2px, 1px); }
-  10% { transform: rotate(2deg) translate(1px, 2px); }
-  20% { transform: rotate(-2deg) translate(3px, 0px) ; }
-  30% { transform: rotate(0deg) translate(0px, -2px); }
-  40% { transform: rotate(-2deg) translate(-1px, 1px); }
-  50% { transform: rotate(2deg) translate(1px, -2px); }
-  60% { transform: rotate(0deg) translate(3px, -1px); }
-  70% { transform: rotate(2deg) translate(-2px, -1px); }
-  80% { transform: rotate(-2deg) translate(1px, 1px); }
-  90% { transform: rotate(0deg) translate(-2px, -2px); }
-  100% { transform: rotate(2deg) translate(-1px, 2px); }
+    0% {
+        transform: rotate(0deg) translate(2px, 1px);
+    }
+    10% {
+        transform: rotate(2deg) translate(1px, 2px);
+    }
+    20% {
+        transform: rotate(-2deg) translate(3px, 0px);
+    }
+    30% {
+        transform: rotate(0deg) translate(0px, -2px);
+    }
+    40% {
+        transform: rotate(-2deg) translate(-1px, 1px);
+    }
+    50% {
+        transform: rotate(2deg) translate(1px, -2px);
+    }
+    60% {
+        transform: rotate(0deg) translate(3px, -1px);
+    }
+    70% {
+        transform: rotate(2deg) translate(-2px, -1px);
+    }
+    80% {
+        transform: rotate(-2deg) translate(1px, 1px);
+    }
+    90% {
+        transform: rotate(0deg) translate(-2px, -2px);
+    }
+    100% {
+        transform: rotate(2deg) translate(-1px, 2px);
+    }
+}
+
+@keyframes astronautFly {
+    0% {
+        left: -100px;
+    }
+    25% {
+        top: 50%;
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(45deg);
+        top: 55%;
+    }
+    75% {
+        top: 60%;
+        transform: rotate(30deg);
+    }
+    100% {
+        left: 110%;
+        transform: rotate(45deg);
+    }
+}
+
+@for $k from 1 through 100 {
+    @keyframes twinkle#{$k} {
+        0% {
+            transform: scale(1, 1);
+        }
+        10% {
+            transform: scale(0.3, 0.3);
+        }
+        20% {
+            transform: scale(1, 1);
+        }
+        30% {
+            transform: scale(0.5, 0.5);
+        }
+        40% {
+            transform: scale(1, 1);
+        }
+        100% {
+            transform: scale(1, 1);
+        }
+    }
+}
+
+@keyframes flyby {
+    from {
+        left: 0%;
+    }
+    to {
+        left: -100%;
+    }
 }
