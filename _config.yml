@@ -13,17 +13,13 @@ linkedin:
 
 # Build settings
 # markdown: kramdown
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal
 plugins:
-  - jekyll-feed
   - jekyll-paginate
-  - jekyll-category-pages
 sass:
   sass_dir: _sass
   style: compressed
 logo: /assets/img/logo.png
-category_layout: "category_index.html"
-category_path: "tags"
 # paginate: 2
 show_downloads: false
 destination: docs/
