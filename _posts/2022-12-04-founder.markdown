@@ -1,0 +1,11 @@
+---
+title: The Founder
+permalink: founder
+bg: purple
+color: white
+style: center
+fa-icon: shield-heart
+---
+
+{% include founder.html %}
+

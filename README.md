@@ -1,23 +1,8 @@
-# README
+# wow-life.in
+Website for wow-life.in
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Dev setup
+- To build locally `jekyll build`
+- To start locally `jekyll serve`
 
-Things you may want to cover:
-
-* Ruby version
-
-        2.7.3
-
-* Database creation
-
-        CREATE DATABASE wow_life_development;
-
-* Database initialization
-
-        rails db:migrate
-        rails db:seed
-
-* Run Application
-
-        rails s
+Prefix `JEKYLL_ENV=production` to the above command to compile in production mode

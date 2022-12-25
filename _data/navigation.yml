@@ -1,0 +1,11 @@
+menu:
+  - name: Home
+    link: home
+  - name: S!DH HEAL!NG
+    link: sidh-healing
+  - name: Hormony
+    link: hormony
+  - name: Founder
+    link: founder
+  - name: Contact Us
+    link: contact-us
