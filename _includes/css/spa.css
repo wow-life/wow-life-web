@@ -188,6 +188,7 @@ nav ul li:hover, nav ul li.active {
   background-image:none;
   position: fixed;
   bottom: 0;
+  z-index: 999;
 }
 #footer .container p { font-size:13px; margin:0; }
 
@@ -231,11 +232,13 @@ nav ul li:hover, nav ul li.active {
   text-transform:uppercase;
   position:absolute;
   bottom:50px;
-  left:auto;
+  left:0;
   text-align:center;
   display:block;
   z-index:6;
   width:240px;
+  right:0;
+  margin:auto;
 }
 
 .sectiondivider.imaged {

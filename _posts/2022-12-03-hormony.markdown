@@ -1,5 +1,5 @@
 ---
-title: ATTAIN COMPLETE HARMONY
+title: Attain Complete Harmony
 permalink: hormony
 bg: green
 color: white
