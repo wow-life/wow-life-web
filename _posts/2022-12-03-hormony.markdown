@@ -1,7 +1,10 @@
 ---
-layout: default
 title: ATTAIN COMPLETE HARMONY
 permalink: hormony
+bg: green
+color: white
+style: center
+fa-icon: yin-yang
 ---
 
 {% include hormony.html %}

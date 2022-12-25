@@ -1,0 +1,1 @@
+Copyright - Wow-Life® - 2022

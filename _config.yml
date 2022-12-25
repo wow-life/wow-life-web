@@ -1,3 +1,10 @@
+---
+#Dev configurations#
+port: 4000
+host: 0.0.0.0
+safe: false
+
+### content configuration ###
 title: Wow-L!fe
 email: founder@wow-life.in
 description: Wow-L!fe website
@@ -8,13 +15,21 @@ github_username:
 github:
   - metadata
 author: Nirmal Kumar
+keywords: "wow-life, yoga, rekhi, vastu"
+favicon: "favicon.ico"
+touch_icon:  #put a path like: "img/apple-touch-icon.png"
+google_analytics_key: G-W5P1NYEMW1
 facebook:
 linkedin:
 
 # Build settings
-# markdown: kramdown
-plugins:
-  - jekyll-paginate
+### site serving configuration ###
+permalink: /:title
+timezone: IST
+lsi: false
+markdown: kramdown
+# plugins:
+  # - jekyll-paginate
 sass:
   sass_dir: _sass
   style: compressed
@@ -27,6 +42,7 @@ include:
 exclude:
   - .sass-cache/
   - .jekyll-cache/
+  - .gitignore
   - gemfiles/
   - Gemfile
   - Gemfile.lock
@@ -35,3 +51,20 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - README.md
+  - log
+  - tmp
+  - pages
+
+### template colors, used site-wide via css ###
+colors:
+  black:     '#111111'
+  white:     '#f8f8f8'
+  blue:      '#49a7e9'
+  green:     '#9bcf2f'
+  purple:    '#c869bf'
+  orange:    '#fab125'
+  turquoise: '#0fbfcf'
+
+kramdown:
+  auto_ids:  false

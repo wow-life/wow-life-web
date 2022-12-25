@@ -1,5 +1,5 @@
 ---
-layout: spa
+layout: default
 title: The Founder
 permalink: founder
 ---

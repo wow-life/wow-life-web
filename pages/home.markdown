@@ -1,5 +1,5 @@
 ---
-layout: spa
+layout: default
 title: Home
 permalink: home
 ---

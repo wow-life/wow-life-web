@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem "minimal"
+gem "webrick"
 
 group :jekyll_plugins do
   gem "jekyll-feed"
