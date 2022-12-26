@@ -1,1 +1,1 @@
-Copyright - Wow-Life® - 2022
+{{ site.title }} © - {{ site.time | date: '%Y' }} • All right reserved.

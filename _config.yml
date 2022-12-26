@@ -5,7 +5,7 @@ host: 0.0.0.0
 safe: false
 
 ### content configuration ###
-title: Wow-L!fe
+title: Wow-L!fe®
 email: founder@wow-life.in
 description: Wow-L!fe website
 baseurl: ''
@@ -33,7 +33,7 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
-logo: /assets/img/logo.png
+logo: /assets/img/logo.svg
 # paginate: 2
 show_downloads: false
 destination: docs/
@@ -59,12 +59,12 @@ exclude:
 ### template colors, used site-wide via css ###
 colors:
   black:     '#111111'
-  white:     '#f8f8f8'
+  white:     '#ffffff'
   blue:      '#49a7e9'
-  green:     '#9bcf2f'
-  purple:    '#c869bf'
-  orange:    '#fab125'
-  turquoise: '#0fbfcf'
+  green:     '#58A55C'
+  purple:    '#D85040'
+  orange:    '#F2BD42'
+  turquoise: '#5285EC'
 
 kramdown:
   auto_ids:  false

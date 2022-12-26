@@ -25,6 +25,21 @@
   #{{id}} .sectiondivider { color: {{ bg }}; }
 {% endfor %}
 
+.logo {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  background: url('{{ site.logo }}') no-repeat center center;
+  background-size: cover;
+  height: 250px;
+  width: 250px;
+}
+
+.inline-list {
+  display: flex;
+  list-style: disc;
+  justify-content: space-evenly;
+}
 
 /* ----- code, syntax highlighting, etc ----- */
 
@@ -176,7 +191,7 @@ nav ul li:hover, nav ul li.active {
 }
 
 .section:first-of-type {
-    padding-top: 140px;
+    padding-top: 100px;
 }
 
 
