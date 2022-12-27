@@ -42,10 +42,6 @@
   justify-content: space-evenly;
 }
 
-.inline-list li {
-  /*flex: 1 1 30%;*/
-}
-
 /* ----- code, syntax highlighting, etc ----- */
 
 code, pre { font-family: 'Poppins', 'Alice'; }
