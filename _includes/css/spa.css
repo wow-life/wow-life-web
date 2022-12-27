@@ -31,8 +31,8 @@
   margin: 0 auto;
   background: url('{{ site.logo }}') no-repeat center center;
   background-size: cover;
-  height: 350px;
-  width: 350px;
+  height: 300px;
+  width: 300px;
 }
 
 .inline-list {
@@ -327,7 +327,7 @@ nav ul li:hover, nav ul li.active {
     column-count:         2;
   }
   .logo {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
   }
 }
