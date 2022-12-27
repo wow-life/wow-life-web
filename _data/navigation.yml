@@ -1,5 +1,5 @@
 menu:
-  - name: Home
+  - name: <img style="height:15px;width:15px;padding:5px" src="assets/img/moving_logo.gif"/>Home
     link: home
   - name: S!DH HEAL!NG
     link: sidh-healing
