@@ -36,9 +36,16 @@
 }
 .logo-text {
   font-family: 'Niconne', 'Open Sans', sans-serif;
-  font-size: 8em;
+  font-size: 6em;
   padding-bottom: 10px !important;
   margin-bottom: 40px !important;
+}
+.logo-text-highlight {
+  color: #D85040;
+  font-family: 'Niconne', 'Open Sans', sans-serif;
+}
+.logo-sub-text {
+  font-family: 'Niconne', 'Open Sans', sans-serif;
 }
 .logo-text::after {
   content: '®';
@@ -343,6 +350,6 @@ nav ul li:hover, nav ul li.active {
     width: 200px;
   }
   .logo-text {
-    font-size: 5em !important;
+    font-size: 4em !important;
   }
 }
