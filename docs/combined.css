@@ -29,9 +29,8 @@
 		padding: 0;
 		border: 0;
 		font-size: 100%;
-		font: inherit;
 		vertical-align: baseline;
-		font-family: 'Poppins', 'Alice';}
+		font-family: 'Poppins', 'Alice', sans-serif;}
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block; }
 	body {
@@ -557,12 +556,11 @@ span.lineno {
   width: 300px;
 }
 .logo-text {
-  font-family: 'Niconne', 'Open Sans';
+  font-family: 'Niconne', 'Open Sans', sans-serif;
   font-size: 8em;
   padding-bottom: 10px !important;
   margin-bottom: 40px !important;
 }
-
 .logo-text::after {
   content: '®';
   position: absolute;
@@ -570,7 +568,6 @@ span.lineno {
   top: 0;
   text-transform: lowercase;
 }
-
 .inline-list {
   display: flex;
   flex-wrap: wrap;
@@ -580,7 +577,8 @@ span.lineno {
 
 /* ----- code, syntax highlighting, etc ----- */
 
-code, pre { font-family: 'Poppins', 'Alice'; }
+code, pre {
+  font-family: 'Poppins', 'Alice', serif; }
 
 /* spesifically inline code */
 code, pre {
