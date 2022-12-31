@@ -46,6 +46,8 @@
 }
 .logo-sub-text {
   font-family: 'Niconne', 'Open Sans', sans-serif;
+  font-size: 2em;
+  letter-spacing: 2px;
 }
 .logo-text::after {
   content: '®';
@@ -351,5 +353,8 @@ nav ul li:hover, nav ul li.active {
   }
   .logo-text {
     font-size: 4em !important;
+  }
+  .logo-sub-text {
+    font-size: 2em !important;
   }
 }
