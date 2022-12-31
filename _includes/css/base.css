@@ -30,7 +30,7 @@
 		border: 0;
 		font-size: 100%;
 		vertical-align: baseline;
-		font-family: 'Poppins', 'Alice', sans-serif;}
+		font-family: 'Alice', 'Poppins', sans-serif;}
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block; }
 	body {
@@ -52,7 +52,7 @@
 ================================================== */
 	body {
 		background: #fff;
-		font: 14px/21px 'Poppins', 'Alice';
+		font: 14px/21px 'Alice', 'Poppins';
 		color: #444;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
