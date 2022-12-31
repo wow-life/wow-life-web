@@ -556,6 +556,20 @@ span.lineno {
   height: 300px;
   width: 300px;
 }
+.logo-text {
+  font-family: 'Niconne', 'Open Sans';
+  font-size: 8em;
+  padding-bottom: 10px !important;
+  margin-bottom: 40px !important;
+}
+
+.logo-text::after {
+  content: '®';
+  position: absolute;
+  font-size: 22px;
+  top: 0;
+  text-transform: lowercase;
+}
 
 .inline-list {
   display: flex;
@@ -842,7 +856,6 @@ nav ul li:hover, nav ul li.active {
     bottom:30px;
     width:170px
   }
-
   .columned {
     -webkit-column-count: 2;
     -moz-column-count:    2;
@@ -851,6 +864,9 @@ nav ul li:hover, nav ul li.active {
   .logo {
     height: 200px;
     width: 200px;
+  }
+  .logo-text {
+    font-size: 5em !important;
   }
 }
 
