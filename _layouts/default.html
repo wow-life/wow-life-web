@@ -22,7 +22,6 @@
 
     <nav><ul>
       {% for item in site.data.navigation.menu %}
-        {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
         <li class="p-{{item.link}}">
           <a href="#{{item.link}}">{{item.name}}</a>
         </li>
