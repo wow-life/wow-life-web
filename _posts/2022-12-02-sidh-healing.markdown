@@ -1,5 +1,5 @@
 ---
-title: S!DH HEAL!NG
+title: S!dh Healing
 permalink: sidh-healing
 bg: turquoise
 color: white
