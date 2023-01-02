@@ -1,10 +1,10 @@
 menu:
   - name: <img style="height:15px;width:15px;padding:5px" src="assets/img/moving_logo.gif"/>Home
     link: home
-  - name: S!DH HEAL!NG
+  - name: S!dh Healing
     link: sidh-healing
-  - name: Hormony
-    link: hormony
+  - name: Harmony
+    link: harmony
   - name: Founder
     link: founder
   - name: Contact Us
