@@ -41,7 +41,7 @@
   margin-bottom: 40px !important;
 }
 .logo-text-highlight {
-  color: {{ site.colors.red }};
+  color: {{ site.colors.yellow }};
   font-family: 'Niconne', 'Open Sans', sans-serif;
   letter-spacing: -2px;
 }
