@@ -1,6 +1,6 @@
 ---
 title: The Founder
-permalink: founder
+permalink: #founder
 bg: red
 color: white
 style: center

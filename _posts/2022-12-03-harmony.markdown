@@ -1,6 +1,6 @@
 ---
 title: Attain Complete Harmony
-permalink: harmony
+permalink: #harmony
 bg: green
 color: white
 style: center

@@ -1,6 +1,6 @@
 ---
 title: S!dh Healing
-permalink: sidh-healing
+permalink: #sidh-healing
 bg: blue
 color: white
 style: center
