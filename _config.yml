@@ -7,7 +7,7 @@ safe: false
 ### content configuration ###
 title: Wow-L!fe®
 email: founder@wow-life.in
-description: Wow-L!fe website
+description: "Wow-L!fe - S!dh Healing \n Since 1996 \n As light eliminates darkness, thus 'S!dh eliminates disease' - Nirmal"
 baseurl: ''
 url: 'https://wow-life.in'
 twitter_username:
@@ -19,8 +19,8 @@ keywords: "wow-life, yoga, rekhi, vastu"
 favicon: "favicon.ico"
 touch_icon:  #put a path like: "img/apple-touch-icon.png"
 google_analytics_key: G-W5P1NYEMW1
-facebook:
-linkedin:
+facebook: https://www.facebook.com/WowLifedr
+linkedin: https://www.linkedin.com/in/nirmal-kumar-b-ab34726
 
 # Build settings
 ### site serving configuration ###
