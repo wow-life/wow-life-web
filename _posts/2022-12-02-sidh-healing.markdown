@@ -1,7 +1,7 @@
 ---
 title: S!dh Healing
 permalink: sidh-healing
-bg: turquoise
+bg: blue
 color: white
 style: center
 fa-icon: hands-holding

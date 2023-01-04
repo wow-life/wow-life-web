@@ -1,7 +1,7 @@
 ---
 title: Contact Us
 permalink: contact-us
-bg: orange
+bg: yellow
 color: white
 style: center
 fa-icon: map-location-dot

@@ -60,11 +60,10 @@ exclude:
 colors:
   black:     '#111111'
   white:     '#ffffff'
-  blue:      '#49a7e9'
+  blue:      '#5285EC'
   green:     '#58A55C'
-  purple:    '#D85040'
-  orange:    '#F2BD42'
-  turquoise: '#5285EC'
+  red:       '#D85040'
+  yellow:    '#F2BD42'
 
 kramdown:
   auto_ids:  false
