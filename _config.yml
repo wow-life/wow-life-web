@@ -15,17 +15,18 @@ github_username:
 github:
   - metadata
 author: Nirmal Kumar
-keywords: "wow-life, yoga, rekhi, vastu"
+keywords: "wow-life, yoga, rekhi, vastu, sidh healing, healing, inner peace, i am that, connecting to self, self help, self healing, peaceful mind, mind, body, soul"
 favicon: "favicon.ico"
 touch_icon:  #put a path like: "img/apple-touch-icon.png"
 google_analytics_key: G-W5P1NYEMW1
 facebook: https://www.facebook.com/WowLifedr
+instagram: https://www.instagram.com/wowlifedr
 linkedin: https://www.linkedin.com/in/nirmal-kumar-b-ab34726
 
 # Build settings
 ### site serving configuration ###
 permalink: /:title
-timezone: IST
+timezone: Asia/Kolkata
 lsi: false
 markdown: kramdown
 # plugins:
