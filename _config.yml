@@ -10,7 +10,6 @@ email: founder@wow-life.in
 description: "Wow-L!fe - S!dh Healing \n Since 1996 \n As light eliminates darkness, thus 'S!dh eliminates disease' - Nirmal"
 baseurl: ''
 url: 'https://wow-life.in'
-twitter_username:
 github_username:
 github:
   - metadata
@@ -21,6 +20,7 @@ touch_icon:  #put a path like: "img/apple-touch-icon.png"
 google_analytics_key: G-W5P1NYEMW1
 facebook: https://www.facebook.com/WowLifedr
 instagram: https://www.instagram.com/wowlifedr
+twitter: https://mobile.twitter.com/ARHAMMWOWLIFE
 linkedin: https://www.linkedin.com/in/nirmal-kumar-b-ab34726
 
 # Build settings
